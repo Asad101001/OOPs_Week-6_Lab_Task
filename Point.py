@@ -2,40 +2,58 @@ class Point:
 
     count = 0  # Tracks number of Point objects/instances
 
+#NULL / DEFAULT Constructor
+
     #Point() -> x=0,y=0
     def __init__ ( self, x = 0.0, y = 0.0 ):  # Default constructor if user does not provide any argument.
 
-        #PARAMETRIZED CONSTRUCTOR
+#PARAMETRIZED Constructors
 
+        #Copy constructor
         #Point(A) -> x=A.x,y=A.y
-        #Copy constructor logic
         if isinstance (x, Point):           # Checks if argument entered already is an instance of Point class
             self._x = x._x
             self._y = x._y
 
         else:
 
+        #Two-parameter constructor
         #Point(x,y) -> x,y
             self._x = x
             self._y = y
 
         Point.count += 1
 
-    #USING @property and @setters as decorators to treat attributes as functions to ensure encapsulation
-    @property
-    def x( self ):
+# Tried using @property and @setters as decorators to treat attributes as functions to ensure encapsulation
+    # @property
+    # def x( self ):
+    #     return self._x
+    # @x.setter
+    # def x(self, value):
+    #    self._x = value
+    #
+    # @property
+    # def y(self):
+    #    return self._y
+    #
+    # @y.setter
+    # def y(self, value):
+    #    self._y = value
+
+# But then setter() and getter() are not callable leading to code breaking
+
+#NEW Setters
+    def set_x( self,value ):
+        self._x = value
+    def set_y( self, value ):
+        self._y = value
+
+#NEW Getters
+    def get_x( self ):
         return self._x
-    @x.setter
-    def x(self, value):
-       self._x = value
+    def get_y( self ):
+        return self._y
 
-    @property
-    def y(self):
-       return self._y
-
-    @y.setter
-    def y(self, value):
-       self._y = value
 
     #ADDITION OF 2 POINTS
     def add ( self, other ):
