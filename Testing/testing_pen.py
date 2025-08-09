@@ -1,6 +1,6 @@
 import tkinter as tk
-from Canvas import TKPanel
-from Pen import Pen
+from Drawing.Canvas import TKPanel
+from Drawing.Pen import Pen
 
 # Tkinter setup
 root = tk.Tk()

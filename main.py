@@ -1,4 +1,4 @@
-from App import App
+from Application.App import App
 
 # MAINTAINING NEAT AND TIDY main.py FILE AND ALSO FOLLOWING SINGLE RESPONSIBILITY PRINCIPLE
 

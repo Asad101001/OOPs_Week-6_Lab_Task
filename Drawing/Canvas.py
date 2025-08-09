@@ -1,6 +1,6 @@
 import tkinter as tk
-from Point import Point
-from Line import Line
+from Geometry.Point import Point
+from Geometry.Line import Line
 
 class TKPanel(tk.Canvas):                                       #'TKPanel' is child of 'tk.Canvas'
     def __init__(self, master=None, width=400, height=400 , **kwargs):

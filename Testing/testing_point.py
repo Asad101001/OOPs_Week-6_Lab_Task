@@ -1,4 +1,4 @@
-from Point import Point
+from Geometry.Point import Point
 
 A = Point()
 B = Point (6, 9)

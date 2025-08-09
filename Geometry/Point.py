@@ -87,4 +87,3 @@ class Point:
     @classmethod
     def get_count ( cls ):
         return cls.count
-

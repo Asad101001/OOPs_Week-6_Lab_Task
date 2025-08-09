@@ -1,4 +1,4 @@
-from Point import Point
+from Geometry.Point import Point
 
 class Line:
     def __init__(self, start: Point, end: Point):

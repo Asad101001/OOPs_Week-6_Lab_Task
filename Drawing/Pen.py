@@ -1,4 +1,4 @@
-from Point import Point
+from Geometry.Point import Point
 
 class Pen:
 
